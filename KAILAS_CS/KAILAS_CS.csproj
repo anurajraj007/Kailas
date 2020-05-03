@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F189C73C-8442-4635-9436-B1901E2F1585}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KAILAS_CS</RootNamespace>
+    <AssemblyName>KAILAS_CS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EventCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EventCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\KAILAS_CS.dll" />
+    <Content Include="bin\KAILAS_CS.pdb" />
+    <Content Include="Core\CSS\kailas-dashboard.css" />
+    <Content Include="Core\CSS\kailas-bootstrap.css" />
+    <Content Include="Core\images\meeting.jpg" />
+    <Content Include="Core\images\wedding.jpg" />
+    <Content Include="Core\images\wedding_hall.jpg" />
+    <Content Include="Core\Kailas\logo.png" />
+    <Content Include="Core\Src\Admin\AccessAuthentication.aspx" />
+    <Content Include="Core\Src\Admin\Booking.aspx" />
+    <Content Include="Core\Src\Admin\CancellBooking.aspx" />
+    <Content Include="Core\Src\Admin\ChangePassword.aspx" />
+    <Content Include="Core\Src\Admin\Dashboard.aspx" />
+    <Content Include="Core\Src\Admin\MarriageCertificate.aspx" />
+    <Content Include="Core\Src\Admin\BookingHistory.aspx" />
+    <Content Include="Core\Src\Admin\PaymentSection.aspx" />
+    <Content Include="Core\Src\Admin\Signature.aspx" />
+    <Content Include="Core\Src\Public\ChangePassword.aspx" />
+    <Content Include="Core\Src\Public\Dialogbox.aspx" />
+    <Content Include="Core\Src\Public\Feedback.aspx" />
+    <Content Include="Core\Src\Public\Login.aspx" />
+    <Content Include="Core\Src\Public\Logout.aspx" />
+    <Content Include="Core\Scripts\CommonScripts.js" />
+    <Content Include="Core\Src\Super\AccountRegistration.aspx" />
+    <Content Include="Core\Src\Super\Dashboard.aspx" />
+    <Content Include="Core\Src\User\Booking.aspx" />
+    <Content Include="Core\Src\User\BookingHistory.aspx" />
+    <Content Include="Core\Src\User\CacelBooking.aspx" />
+    <Content Include="Core\Src\User\Dashboard.aspx" />
+    <Content Include="Core\Src\Public\Registration.aspx" />
+    <Content Include="Core\Src\User\MarriageCertificate.aspx" />
+    <Content Include="Core\Src\User\PaymentDetails.aspx" />
+    <Content Include="Core\Src\User\Signature.aspx" />
+    <Content Include="Core\Src\User\UserProfile.aspx" />
+    <Content Include="Core\Src\User\UserProfileDetails.aspx" />
+    <Content Include="Plugins\Content\bootstrap-datetimepicker.css" />
+    <Content Include="Plugins\Content\bootstrap-theme.css" />
+    <Content Include="Plugins\Content\bootstrap.css" />
+    <Content Include="obj\Debug\KAILAS_CS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\KAILAS_CS.dll" />
+    <Content Include="obj\Debug\KAILAS_CS.pdb" />
+    <Content Include="Plugins\Content\datepicker.css" />
+    <Content Include="Plugins\Content\font-awesome-ie7.css" />
+    <Content Include="Plugins\Content\font-awesome-ie7.min.css" />
+    <Content Include="Plugins\Content\font-awesome.min.css" />
+    <Content Include="Plugins\Content\jquery-ui.css" />
+    <Content Include="Plugins\Content\jquery.ui.core.css" />
+    <Content Include="Plugins\Scripts\bootbox.min.js" />
+    <Content Include="Plugins\css\font-awesome.min.css" />
+    <Content Include="Plugins\Scripts\bootstrap-datepicker.js" />
+    <Content Include="Plugins\Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Plugins\Scripts\bootstrap.min.js" />
+    <Content Include="Core\CSS\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Plugins\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Plugins\Scripts\moment-with-locales.min.js" />
+    <Content Include="Plugins\Scripts\moment.min.js" />
+    <Content Include="Plugins\Scripts\jquery.validate.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Core\Entity\BookingEntity.cs" />
+    <Compile Include="Core\Entity\CommonFunctions.cs" />
+    <Compile Include="Core\Entity\DL\DBAuthInfo.cs" />
+    <Compile Include="Core\Entity\DL\DL_Admin.cs" />
+    <Compile Include="Core\Entity\DL\DL_Common.cs" />
+    <Compile Include="Core\Entity\DL\DL_Super.cs" />
+    <Compile Include="Core\Entity\DL\DL_User.cs" />
+    <Compile Include="Core\Entity\Login.cs" />
+    <Compile Include="Core\Entity\SavedSession.cs" />
+    <Compile Include="Core\Entity\UserAccount.cs" />
+    <Compile Include="Core\Masters\Public.Master.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\Public.Master.designer.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Masters\Super.Master.cs">
+      <DependentUpon>Super.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\Super.Master.designer.cs">
+      <DependentUpon>Super.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Masters\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Masters\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\AccessAuthentication.aspx.cs">
+      <DependentUpon>AccessAuthentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\AccessAuthentication.aspx.designer.cs">
+      <DependentUpon>AccessAuthentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\CancellBooking.aspx.cs">
+      <DependentUpon>CancellBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\CancellBooking.aspx.designer.cs">
+      <DependentUpon>CancellBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\MarriageCertificate.aspx.cs">
+      <DependentUpon>MarriageCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\MarriageCertificate.aspx.designer.cs">
+      <DependentUpon>MarriageCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\BookingHistory.aspx.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\BookingHistory.aspx.designer.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\PaymentSection.aspx.cs">
+      <DependentUpon>PaymentSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\PaymentSection.aspx.designer.cs">
+      <DependentUpon>PaymentSection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Signature.aspx.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Admin\Signature.aspx.designer.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\Dialogbox.aspx.cs">
+      <DependentUpon>Dialogbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\Dialogbox.aspx.designer.cs">
+      <DependentUpon>Dialogbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Super\AccountRegistration.aspx.cs">
+      <DependentUpon>AccountRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Super\AccountRegistration.aspx.designer.cs">
+      <DependentUpon>AccountRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Super\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Super\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\BookingHistory.aspx.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\BookingHistory.aspx.designer.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\CacelBooking.aspx.cs">
+      <DependentUpon>CacelBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\CacelBooking.aspx.designer.cs">
+      <DependentUpon>CacelBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\Public\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\Public\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\MarriageCertificate.aspx.cs">
+      <DependentUpon>MarriageCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\MarriageCertificate.aspx.designer.cs">
+      <DependentUpon>MarriageCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\PaymentDetails.aspx.cs">
+      <DependentUpon>PaymentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\PaymentDetails.aspx.designer.cs">
+      <DependentUpon>PaymentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\Signature.aspx.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\Signature.aspx.designer.cs">
+      <DependentUpon>Signature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Src\User\UserProfileDetails.aspx.cs">
+      <DependentUpon>UserProfileDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Src\User\UserProfileDetails.aspx.designer.cs">
+      <DependentUpon>UserProfileDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Masters\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Masters\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Masters\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Core\Document\BridegmWitnessSign\" />
+    <Folder Include="Core\Document\BridegroomSign\" />
+    <Folder Include="Core\Document\BrideSign\" />
+    <Folder Include="Core\Document\BridewitnessSign\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Masters\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Core\Masters\Admin.Master" />
+    <Content Include="Core\Masters\User.Master" />
+    <Content Include="Core\Masters\Super.Master" />
+    <Content Include="Core\Masters\Public.Master" />
+    <None Include="Plugins\Content\bootstrap-theme.css.map" />
+    <None Include="Plugins\Content\bootstrap.css.map" />
+    <None Include="Plugins\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Plugins\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Plugins\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Plugins\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Core\Masters\Main.Master" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2037</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

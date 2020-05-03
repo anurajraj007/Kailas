@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="KAILAS_CS.Core.Masters.Public" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Import Namespace="System.Web.Optimization" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <%-- Style Section --%>
+      <%: Styles.Render("~/Content/BootstrapCss")%> 
+      <%: Styles.Render("~/Core/KailasCSS")%>
+      <%-- Scripts Sections--%>
+      <%: Scripts.Render("~/bundles/jQuery")%> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+</head>
+<body>
+   <div id="DIV_Container" class="container" runat="server">
+         <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">KAILAS</a>
+               </div>
+               <!-- /.navbar-header -->
+               <ul class="nav navbar-top-links navbar-right">
+               </ul>
+               <!-- /.navbar-top-links -->
+               <div class="navbar-default sidebar" role="navigation">
+                  <div class="sidebar-nav navbar-collapse">
+                     <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                           <div class="input-group custom-search-form">
+                              <input type="text" class="form-control" placeholder="Search...">
+                              <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">
+                              <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                              </span>
+                           </div>
+                           <!-- /input-group -->
+                        </li>
+                       <%-- <li>
+                           <a class="active" href="../Src/User/Dashboard.aspx"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a>
+                        </li>--%>
+                        <%-- <li>
+                           <a href="../Admin/Booking.aspx"><i class="glyphicon glyphicon-edit"></i> Booking</a>
+                           </li>
+                           <li>
+                           <a href="../Admin/MarriageCertificate.aspx"><i class="fa fa-table fa-fw"></i> Certificate</a>
+                           </li>--%>
+<%--                        <li>
+                           <a href="/Core/Src/User/ChangePassword.aspx"><i class="glyphicon glyphicon-edit" ></i>Change Password </a>
+                        </li>
+                        <li> 
+                           <a href="/Core/Src/User/Booking.aspx"> <i class="glyphicon glyphicon-edit"></i>Booking</a>
+                        </li>
+                        <li>
+                        <a href="/Core/Src/User/BookingHistory.aspx"> <i class="glyphicon glyphicon-edit"></i> Booking History</a>
+                        </li>--%>
+                     </ul>
+                  </div>
+                  <!-- /.sidebar-collapse -->
+               </div>
+               <!-- /.navbar-static-side -->
+            </nav>
+         </div>
+         <!-- Content Place holder  -->
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+      </div>
+</body>
+</html>

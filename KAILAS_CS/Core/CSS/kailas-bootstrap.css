@@ -1,0 +1,167 @@
+﻿/* 
+====================================================
+// @File        : Kailas-Bootstrap.css
+// @Date        : 25-OCT-2014
+// @Author      : AK
+// @Description : layout styles
+** Revision History:
+    
+Date:
+Author:
+Changes:
+===================================================
+*/
+.side-nav {
+    background-color: #222222;
+    border: medium none;
+    border-radius: 0;
+    left: 225px;
+    margin-left: -225px;
+    overflow-y: auto;
+    position: fixed;
+    top: 51px;
+    width: 225px;
+}
+.sidebar {
+    margin-top: 51px;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+.sidebar ul li {
+    border-bottom: 1px solid #E7E7E7;
+}
+#page_wrapper,.page-wrapper {
+    border-left: 1px solid #E7E7E7;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    position: inherit;
+}
+#page_wrapper,.page-wrapper  {
+    background-color: #FFFFFF;
+    min-height: 568px;
+    padding: 0 15px;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn {
+    min-width: 120px;
+    padding: 9px 12px;
+}
+.navbar-static-top {
+    background-color: #3D86C5;
+    background-image: none;
+    height: 60px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+}
+/* Style for Event Calendar*/
+
+.event-calendar-day-header {
+    font-size: large;
+    font-weight: bold;
+    height: 8pt;
+    text-align: center;
+    color:#000000;
+    Font-Size:large;
+}
+.event-calendar-month-header {
+    background-color: #87CEEB;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.event-calendar-next-prev {
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 15%;
+}
+
+/*Styles for Carousel*/
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 400px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+
+.login-wrapper{
+    border-left: 1px solid #E7E7E7;
+    background-color: #FFFFFF;
+    min-height: 568px;
+    padding: 0 15px;
+    margin:0 40px;
+    padding: 0 30px;
+    position: inherit;
+}
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+.btn
+{
+    background-image: none;
+}
+.modal-backdrop {
+    z-index: 0;
+}
+
+input:required:focus {
+ /* box-shadow: 0  0 5px rgba(255,0,0,0.5);*/ 
+}
+
+.kailas-certificate-img-sign
+{
+    width:  150px;
+    height: 100px;
+}
